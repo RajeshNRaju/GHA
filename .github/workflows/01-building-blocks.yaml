@@ -2,7 +2,7 @@ name: workflow_one
 on:
     push:
         branches:
-            - main:
+            main
 
 jobs:
     job_id:
