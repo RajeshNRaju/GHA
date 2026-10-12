@@ -3,13 +3,13 @@ on: push
 
 jobs:
     echo-hello:
-        runs-on: ubuntu/latest
+        runs-on: ubuntu-latestlatest
         steps:
             - name: Echo Hello
               run: echo "Hello World "
      
     echo-hello2:
-        runs-on: ubuntu/latest
+        runs-on: ubuntu-latestlatest
         steps:
             - name : Echo Hello 3
               run: echo "Hello World 3"
