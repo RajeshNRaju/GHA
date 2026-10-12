@@ -1,22 +1,19 @@
-name: workflow_one
-on:
-    push:
-        branches:
-            main
+name:  building blocks
+on: push
 
 jobs:
-    job-001:
-       - name: 1st job
+    echo-hello:
         runs-on: ubuntu/latest
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v3 
-            - name: echomessage
-              run: echo "Hello World" 
-            
-    job-002:
-       - name: 2nd job
-         runs-on : ubuntu/latest
-         steps:
-            - name: some lines here
-              run: echo "Written someting"
+            - name: Echo Hello
+              run: echo "Hello World "
+     
+     echo-hello2:
+        runs-on: ubuntu/latest
+        steps:
+            - name: Echo Hello 2
+              run: |
+                echo "Hello World 2"   
+                exit 1
+            - name : Echo Hello 3
+              run: echo "Hello World 3"
