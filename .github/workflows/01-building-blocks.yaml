@@ -6,4 +6,12 @@ jobs :
      runs-on: ubuntu-latest
      steps:
          - name : step name here
-           run: ehco "Hello Bool"
+           run: echo "Hello Bool"
+
+    job-id-02:
+        runs-on: ubuntu-latest
+        needs: job-id-001
+        steps:
+            - name : step2 name here
+              run : echo "Hello 2 world"
+             
