@@ -11,9 +11,5 @@ jobs:
     echo-hello2:
         runs-on: ubuntu/latest
         steps:
-            - name: Echo Hello 2
-              run: |
-                echo "Hello World 2"   
-                exit 1
             - name : Echo Hello 3
               run: echo "Hello World 3"
