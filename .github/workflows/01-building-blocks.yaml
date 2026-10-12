@@ -1,15 +1,9 @@
-name:  building blocks
-on: push
+name : workflow name here
+on : [push, pull-request]
 
-jobs:
-    echo-hello:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Echo Hello
-              run: echo "Hello World "
-     
-    echo-hello2:
-        runs-on: ubuntu-latest
-        steps:
-            - name : Echo Hello 3
-              run: echo "Hello World 3"
+jobs :
+    job-id-001:
+     runs-on: ubuntu-latest
+     steps:
+         - name : step name here
+           run: ehco "Hello Bool"
